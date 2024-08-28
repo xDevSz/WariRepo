@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+
+@font-face {
+  font-family: 'Bright';
+  src: url('/src/assets/fonts/Bright\ DEMO.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Bright', sans-serif; /* Define a fonte 'Bright' para todo o corpo da aplicação */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+

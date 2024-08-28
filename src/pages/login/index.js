@@ -1,33 +1,33 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Importação necessária
-import './login.css';
+import { useNavigate } from 'react-router-dom';
+import styles from './login.module.css'; // Importando como CSS Module
 import logo from '../../assets/images/logo.png';
 import imageLeft from '../../assets/images/image-left.png';
 import imageRight from '../../assets/images/image-right.png';
 
 const Login = () => {
-    const navigate = useNavigate(); // Hook para navegação
+    const navigate = useNavigate();
 
     const handleLogin = () => {
-        navigate('/register'); // Redireciona para a página de registro
+        navigate('/register');
     };
 
     return (
-        <div className="login-container">
-            <img src={imageLeft} alt="Left Decoration" className="corner-image left-corner" />
-            <img src={imageRight} alt="Right Decoration" className="corner-image right-corner" />
+        <div className={styles.loginContainer}>
+            <img src={imageLeft} alt="Left Decoration" className={`${styles.cornerImage} ${styles.leftCorner}`} />
+            <img src={imageRight} alt="Right Decoration" className={`${styles.cornerImage} ${styles.rightCorner}`} />
 
-            <div className="logo-container">
-                <img src={logo} alt="Logo" className="logo" />
+            <div className={styles.logoContainer}>
+                <img src={logo} alt="Logo" className={styles.logo} />
             </div>
-            <div className="input-container">
-                <input type="email" placeholder="E-MAIL" className="login-input" />
-                <input type="password" placeholder="SENHA" className="login-input" />
+            <div className={styles.inputContainer}>
+                <input type="email" placeholder="E-MAIL" className={styles.loginInput} />
+                <input type="password" placeholder="SENHA" className={styles.loginInput} />
             </div>
-            <button className="login-button" onClick={handleLogin}>ENTRAR</button>
-            <div className="register-container">
-                <div className="register-line"></div>
-                <div className="register-link">
+            <button className={styles.loginButton} onClick={handleLogin}>ENTRAR</button>
+            <div className={styles.registerContainer}>
+                <div className={styles.registerLine}></div>
+                <div className={styles.registerLink}>
                     Ainda não é cadastrado? <a href="/register">Clique aqui</a> para criar sua conta!
                 </div>
             </div>
@@ -36,4 +36,3 @@ const Login = () => {
 };
 
 export default Login;
-
