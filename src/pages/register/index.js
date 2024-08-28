@@ -6,14 +6,17 @@ import logo from '../../assets/images/logo.png';
 import imageLeft from '../../assets/images/image-left.png';
 import imageRight from '../../assets/images/image-right.png';
 import chatIcon from '../../assets/images/chat-icon.png';
-import helpIcon from '../../assets/images/help-icon.png'; // Importa o ícone
+import helpIcon from '../../assets/images/help-icon.png';
 
 const Register = () => {
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aqui você pode adicionar o redirecionamento ou outra lógica
+        // Aqui você pode adicionar qualquer lógica adicional de cadastro, como enviar os dados para um servidor.
+
+        // Após a lógica de cadastro, redirecionar para a página de login
+        navigate('/');
     };
 
     const handleHelpClick = (message) => {
