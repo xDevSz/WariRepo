@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Bright';
+    src: url('/src/assets/fonts/Bright\ DEMO.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Bright', sans-serif;
+}
+
+.registerContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #e5e3d7;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.registerCornerImage {
+    position: absolute;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.registerLeftCorner {
+    top: -3%;
+    left: 0;
+    width: 40vw;
+    height: auto;
+}
+
+.registerRightCorner {
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: auto;
+}
+
+.registerLogo {
+    width: 15vw;
+    max-width: 150px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.registerForm {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputWrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.registerInput {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #8FBC8F;
+    color: white;
+    font-family: 'Bright', sans-serif;
+}
+
+.helpIcon {
+    position: absolute;
+    top: -45px;
+    right: -45px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.registerButton {
+    width: 50%;
+    padding: 12px;
+    border-radius: 30px;
+    background-color: #2E8B57;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Bright', sans-serif;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.registerButton:hover {
+    background-color: #27664D;
+    transform: translateY(-2px);
+}
+
+.registerFooterContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.registerLine {
+    width: 100%;
+    max-width: 600px;
+    border-top: 2px solid #6b8e23;
+    margin: 0 auto 10px;
+}
+
+.registerFooterLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.registerHelpLink {
+    font-size: 1.3rem;
+    color: black;
+    font-family: 'Bright', sans-serif;
+    text-align: left;
+}
+
+.registerChatLink {
+    font-size: 1.3rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Bright', sans-serif;
+    text-align: right;
+}
+
+.registerChatIcon {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+}
+
+.registerInput::placeholder {
+    color: white;
+    opacity: 1;
+    font-family: 'Bright', sans-serif;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .registerLeftCorner,
+    .registerRightCorner {
+        width: 30vw;
+    }
+
+    .registerLogo {
+        width: 25vw;
+        max-width: 100px;
+    }
+
+    .registerInput,
+    .registerButton {
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    .registerFooterLinks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registerHelpLink,
+    .registerChatLink {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .registerLine {
+        margin: 10px 0;
+    }
+}

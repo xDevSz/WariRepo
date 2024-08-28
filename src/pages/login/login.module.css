@@ -9,11 +9,7 @@ body {
     font-family: 'Bright', sans-serif;
 }
 
-.login-container, .login-input, .login-button, .register-link {
-    font-family: 'Bright', sans-serif;
-}
-
-.login-container {
+.loginContainer {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -25,39 +21,39 @@ body {
     box-sizing: border-box;
 }
 
-.corner-image {
+.cornerImage {
     position: absolute;
     z-index: 1;
     object-fit: contain;
 }
 
-.left-corner {
-    top: -10%;
-    left: 0%;
-    width: 60vw; /* Usa largura relativa à viewport para adaptabilidade */
+.leftCorner {
+    top: -3%;
+    left: 0;
+    width: 40vw;
     height: auto;
 }
 
-.right-corner {
-    top: 1%;
-    right: 1%;
-    width: 20vw; /* Usa largura relativa à viewport para adaptabilidade */
+.rightCorner {
+    top: 0;
+    right: 0;
+    width: 20vw;
     height: auto;
 }
 
-.logo-container {
+.logoContainer {
     margin-bottom: 40px;
     z-index: 2;
 }
 
 .logo {
-    width: 25vw; /* Usa largura relativa à viewport para adaptabilidade */
+    width: 25vw;
     max-width: 250px;
     height: auto;
     border-radius: 50%;
 }
 
-.input-container {
+.inputContainer {
     width: 90%;
     max-width: 600px;
     margin-bottom: 30px;
@@ -66,36 +62,36 @@ body {
     align-items: center;
 }
 
-.login-input {
+.loginInput {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 30px;
     border: 1px solid #ddd;
     text-align: center;
-    font-size: 1.2rem; /* Tamanho da fonte responsivo */
+    font-size: 1.2rem;
     background-color: #8FBC8F;
     color: white;
 }
 
-.login-button {
+.loginButton {
     width: 100%;
     max-width: 600px;
     padding: 15px;
     border-radius: 30px;
     background-color: #8FBC8F;
     color: white;
-    font-size: 1.3rem; /* Tamanho da fonte responsivo */
+    font-size: 1.3rem;
     border: none;
     cursor: pointer;
     text-align: center;
 }
 
-.login-button:hover {
+.loginButton:hover {
     background-color: #6b8e23;
 }
 
-.register-container {
+.registerContainer {
     margin-top: auto;
     width: 100%;
     text-align: center;
@@ -105,7 +101,7 @@ body {
     bottom: 20px;
 }
 
-.register-line {
+.registerLine {
     border-top: 2px solid #6b8e23;
     margin-bottom: 10px;
     width: 100%;
@@ -113,48 +109,54 @@ body {
     margin: 0 auto;
 }
 
-.register-link {
-    font-size: 1.3rem; /* Tamanho da fonte responsivo */
+.registerLink {
+    font-size: 1.3rem;
     color: black;
 }
 
-.register-link a {
+.registerLink a {
     color: #006400;
     text-decoration: none;
-    font-size: 1.3rem; /* Tamanho da fonte responsivo */
+    font-size: 1.3rem;
 }
 
-.register-link a:hover {
+.registerLink a:hover {
     text-decoration: underline;
 }
 
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
-    .left-corner,
-    .right-corner {
-        width: 30vw; /* Aumenta a largura das imagens em telas menores */
+    .leftCorner,
+    .rightCorner {
+        width: 30vw;
     }
 
     .logo {
-        width: 40vw; /* Aumenta a largura do logo em telas menores */
+        width: 40vw;
     }
 
-    .login-input,
-    .login-button {
+    .loginInput,
+    .loginButton {
         padding: 12px;
-        font-size: 1rem; /* Reduz o tamanho da fonte */
+        font-size: 1rem;
     }
 
-    .register-link {
-        font-size: 1rem; /* Reduz o tamanho da fonte */
+    .registerLink {
+        font-size: 1rem;
     }
 
-    .register-link a {
-        font-size: 1rem; /* Reduz o tamanho da fonte */
+    .registerLink a {
+        font-size: 1rem;
     }
 }
 
-.login-input::placeholder {
-    color: white; /* Torna o texto do placeholder branco */
-    opacity: 1; /* Garante que o placeholder seja completamente opaco */
+.loginInput::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
