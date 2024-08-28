@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Bright';
+    src: url('/src/assets/fonts/Bright\ DEMO.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Bright', sans-serif;
+}
+
+.login-container, .login-input, .login-button, .register-link {
+    font-family: 'Bright', sans-serif;
+}
+
+.login-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e5e3d7;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.corner-image {
+    position: absolute;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.left-corner {
+    top: -10%;
+    left: 0%;
+    width: 60vw; /* Usa largura relativa à viewport para adaptabilidade */
+    height: auto;
+}
+
+.right-corner {
+    top: 1%;
+    right: 1%;
+    width: 20vw; /* Usa largura relativa à viewport para adaptabilidade */
+    height: auto;
+}
+
+.logo-container {
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+.logo {
+    width: 25vw; /* Usa largura relativa à viewport para adaptabilidade */
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.input-container {
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.2rem; /* Tamanho da fonte responsivo */
+    background-color: #8FBC8F;
+    color: white;
+}
+
+.login-button {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #8FBC8F;
+    color: white;
+    font-size: 1.3rem; /* Tamanho da fonte responsivo */
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-button:hover {
+    background-color: #6b8e23;
+}
+
+.register-container {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: transparent;
+    position: absolute;
+    bottom: 20px;
+}
+
+.register-line {
+    border-top: 2px solid #6b8e23;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.register-link {
+    font-size: 1.3rem; /* Tamanho da fonte responsivo */
+    color: black;
+}
+
+.register-link a {
+    color: #006400;
+    text-decoration: none;
+    font-size: 1.3rem; /* Tamanho da fonte responsivo */
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .left-corner,
+    .right-corner {
+        width: 30vw; /* Aumenta a largura das imagens em telas menores */
+    }
+
+    .logo {
+        width: 40vw; /* Aumenta a largura do logo em telas menores */
+    }
+
+    .login-input,
+    .login-button {
+        padding: 12px;
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+
+    .register-link {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+
+    .register-link a {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+}
+
+.login-input::placeholder {
+    color: white; /* Torna o texto do placeholder branco */
+    opacity: 1; /* Garante que o placeholder seja completamente opaco */
+}
