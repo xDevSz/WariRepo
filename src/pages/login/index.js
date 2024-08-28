@@ -1,16 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Importação necessária
 import './login.css';
-import logo from '../assets/images/logo.png';
-import imageLeft from '../assets/images/image-left.png'; // Imagem do canto superior esquerdo
-import imageRight from '../assets/images/image-right.png'; // Imagem do canto superior direito
+import logo from '../../assets/images/logo.png';
+import imageLeft from '../../assets/images/image-left.png';
+import imageRight from '../../assets/images/image-right.png';
 
 const Login = () => {
+    const navigate = useNavigate(); // Hook para navegação
+
+    const handleLogin = () => {
+        navigate('/register'); // Redireciona para a página de registro
+    };
+
     return (
         <div className="login-container">
-            {/* Imagem no canto superior esquerdo */}
             <img src={imageLeft} alt="Left Decoration" className="corner-image left-corner" />
-            
-            {/* Imagem no canto superior direito */}
             <img src={imageRight} alt="Right Decoration" className="corner-image right-corner" />
 
             <div className="logo-container">
@@ -20,9 +24,9 @@ const Login = () => {
                 <input type="email" placeholder="E-MAIL" className="login-input" />
                 <input type="password" placeholder="SENHA" className="login-input" />
             </div>
-            <button className="login-button">ENTRAR</button>
+            <button className="login-button" onClick={handleLogin}>ENTRAR</button>
             <div className="register-container">
-                <div className="register-line"></div> {/* Linha reta acima do texto */}
+                <div className="register-line"></div>
                 <div className="register-link">
                     Ainda não é cadastrado? <a href="/register">Clique aqui</a> para criar sua conta!
                 </div>
@@ -32,3 +36,4 @@ const Login = () => {
 };
 
 export default Login;
+
