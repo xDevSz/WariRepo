@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/login/index.js'; // Certifique-se de que o caminho esteja correto
 import Register from './pages/register/index.js'; // Importar a página de registro
+import Map from './pages/map/index.js'
 import './App.css';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Map />} />
           <Route path="/register" element={<Register />} />
         </Routes>
       </div>
