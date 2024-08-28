@@ -44,8 +44,8 @@ const Perfil = () => {
   const handleHomeClick = () => {
       navigate('/home'); // Substitua '/chat' pela rota desejada para o chat
   };
-  const handleNotifyClick = () => {
-    navigate('/notify'); // Substitua '/chat' pela rota desejada para o chat
+  const handleRotaClick = () => {
+    navigate('/rota'); // Substitua '/chat' pela rota desejada para o chat
 };
   
   return (
@@ -58,7 +58,7 @@ const Perfil = () => {
                 <div className={styles.navLinks}>
                     <span onClick={handleHomeClick}>Página Inicial</span>
                     <span className={styles.activeLink}>Perfil</span>
-                    <span onClick={handleNotifyClick}>Notificação</span>
+                    <span onClick={handleRotaClick}>Rota</span>
                 </div>
                 <img src={imageRight} alt="Right Decoration" className={styles.navbarRightImage} />
             </div>

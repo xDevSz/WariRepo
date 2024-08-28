@@ -7,7 +7,7 @@ import Chat from './pages/chat/index';
 import Home from './pages/home/index'; // Importação da página Home
 import Pesquisa from './pages/pesquisa/index'; 
 import Perfil from './pages/perfil/index';
-import Notify from './pages/notify/index'
+import Rota from './pages/rota/index'
 import './App.css';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route path="/ajuda" element={<Help />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/pesquisa" element={<Pesquisa />} />
-          <Route path="/notify" element={<Notify />} />
+          <Route path="/rota" element={<Rota />} />
 
         </Routes>
       </div>
