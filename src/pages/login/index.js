@@ -9,7 +9,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        navigate('/register');
+        navigate('/home');
     };
 
     return (
