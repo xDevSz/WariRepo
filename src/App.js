@@ -5,7 +5,9 @@ import Register from './pages/register/index';
 import Help from './pages/help/index';
 import Chat from './pages/chat/index';
 import Home from './pages/home/index'; // Importação da página Home
-import Pesquisa from './pages/pesquisa/index'; // Certifique-se de que o caminho esteja correto
+import Pesquisa from './pages/pesquisa/index'; 
+import Perfil from './pages/perfil/index';
+import Notify from './pages/notify/index'
 import './App.css';
 
 function App() {
@@ -16,9 +18,12 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} /> {/* Rota para a Home */}
+          <Route path="/perfil" element={<Perfil />} />
           <Route path="/ajuda" element={<Help />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/pesquisa" element={<Pesquisa />} />
+          <Route path="/notify" element={<Notify />} />
+
         </Routes>
       </div>
     </Router>

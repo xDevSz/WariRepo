@@ -17,6 +17,9 @@ const Home = () => {
     const handleChatClick = () => {
         navigate('/chat'); // Substitua '/chat' pela rota desejada para o chat
     };
+    const handlePerfilClick = () => {
+        navigate('/perfil'); // Substitua '/chat' pela rota desejada para o chat
+    };
 
     return (
         <div className={styles.homeContainer}>
@@ -24,7 +27,7 @@ const Home = () => {
                 <img src={logo} alt="Logo" className={styles.navbarLogo} />
                 <div className={styles.navLinks}>
                     <span className={styles.activeLink}>Página Inicial</span>
-                    <span>Perfil</span>
+                    <span onClick={handlePerfilClick}>Perfil</span>
                     <span>Notificação</span>
                 </div>
                 <img src={imageRight} alt="Right Decoration" className={styles.navbarRightImage} />

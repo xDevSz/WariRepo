@@ -1,0 +1,204 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #6b8e23;
+    max-width: 100%;
+}
+.navbarLogo {
+    width: 70px; /* Aumentei o tamanho da logo */
+    height: auto;
+}
+
+.navLinks {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.navLinks span {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: black;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navLinks span:hover,
+.navLinks .activeLink {
+    background-color: #8FBC8F;
+    color: white;
+}
+
+.navbarRightImage {
+    width: 70px; /* Aumentei o tamanho da imagem direita */
+    height: auto;
+}
+.perfil-info {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+  }
+  
+  /* Estilos para os labels e inputs */
+  label {
+    display: block;
+    margin-bottom: 1px;
+  }
+  
+.menuperfil{
+
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    flex-wrap: wrap;
+  }
+
+.fotoperfil{
+    width: 300px;
+    height: 300px;
+    margin-top: 8vw;
+
+}
+
+
+.inputContainer {
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usuario {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 13px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #8FBC8F;
+    color: white;
+    cursor: pointer;
+}
+.usuario:hover{
+background-color: #6b8e23;
+}
+
+.UpdateButton {
+    width: 70%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #8FBC8F;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.UpdateButton:hover {
+    background-color: #6b8e23;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 2px solid #6b8e23;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.chatLink {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.chatLink:hover {
+    color: #8FBC8F;
+}
+
+.chatIcon {
+    width: 40px; /* Aumentei o tamanho da imagem do chat */
+    height: 40px;
+    margin-left: 10px;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .navbarLogo,
+    .navbarRightImage {
+        width: 60px; /* Ajuste para telas menores */
+    }
+
+
+    .footer {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .chatIcon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbarLogo,
+    .navbarRightImage {
+        width: 50px; /* Ajuste adicional para telas muito pequenas */
+    }
+
+    .navLinks span {
+        font-size: 0.9rem;
+    }
+
+    .chatIcon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.footerLeftImage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20vh; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin: 10px;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .footerLeftImage {
+        width: 40px; /* Ajuste o tamanho para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .footerLeftImage {
+        width: 35px; /* Ajuste adicional para telas muito pequenas */
+    }
+}
