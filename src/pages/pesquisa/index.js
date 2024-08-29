@@ -65,7 +65,6 @@ const Pesquisa = () => {
                 <div className={styles.navLinksRight}>
                     {/* Certifique-se de que o navigate leva à rota correta da Home */}
                     <span onClick={() => navigate('/perfil')} className={styles.navLink}>Perfil</span>
-                    <span onClick={() => navigate('/notificacao')} className={styles.navLink}>Notificação</span>
                 </div>
             </div>
 
